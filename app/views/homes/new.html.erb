@@ -6,6 +6,7 @@
 <div id="page-wrapper" class="gray-bg">
 
 <div class="wrapper wrapper-content">
+<%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
     <div class="row animated fadeInDown">
         <div class="col-lg-3">
             <div class="ibox float-e-margins">
@@ -165,7 +166,7 @@
 
     function fetch_event(){
         $(".fc-day-grid-event").on("click",function(){
-            var title = $(this).find(".fc-content").text();
+            var title = $(this).find(".fc-title").text();
             console.log(title);
             var singleObject = $(this);
             console.log(singleObject);
@@ -179,6 +180,9 @@
               data: "title="+title,
               success: function(res) {
                 var response = res.data;
+                // alert(response.name);
+                var resStartDate = response.starting_date.replace('Z','');
+                var resEndDate = response.ending_date.replace('Z','');
                 if(response == undefined){
                     $(".cal_category").html(category);
                     $(".cal_name").val("");
@@ -190,10 +194,10 @@
                 }else{
                     $(".cal_category").html(response.category);
                     $(".cal_name").val(response.name);
-                    $(".cal_start_date").val(response.starting_date)
-                    $(".cal_end_date").val(response.ending_date)
+                    $(".cal_start_date").val(resStartDate);
+                    $(".cal_end_date").val(resEndDate);
                     $(".cal_desc").html(response.description);
-                    $("form#calendar_form").prepend('<input type="hidden" class="cal_method_name" name="_method" value="patch">')
+                    $("form#calendar_form").prepend('<input type="hidden" class="cal_method_name" name="_method" value="patch">');
                     $('#delete').attr("type", "submit");
                     $("form#calendar_form").attr("action", "/homes/"+ response.id)
                 }

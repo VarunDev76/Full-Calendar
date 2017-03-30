@@ -24,6 +24,17 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use Deivse Gem for Login And Signup Page 
+  gem 'devise'
+# Use Deivse Gem use of Google OTP
+  # gem 'devise_google_authenticator'
+# Use Deivse Gem use of Google
+  gem 'omniauth'
+  gem 'omniauth-google-oauth2'
+# Use Deivse Gem use of Google Calendar
+  gem 'google_calendar'
+  gem 'google-api-client', '~> 0.8.6', :require => 'google/api_client'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

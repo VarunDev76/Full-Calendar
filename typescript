@@ -1,0 +1,470 @@
+Script started on Tuesday 28 March 2017 03:04:53 PM IST
+]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ (reverse-i-search)`': [Ks': rails cc': source ~/.rvm/scripts/rvm[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ source ~/.rvm/scripts/rvm
+]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ clear
+[H[2J]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ rails[K[K[Kke routes
+                               Prefix Verb     URI Pattern                                  Controller#Action
+                         homes_events GET      /homes/events(.:format)                      homes#events
+                               events POST     /events(.:format)                            homes#events
+                                homes GET      /homes(.:format)                             homes#index
+                                      POST     /homes(.:format)                             homes#create
+                             new_home GET      /homes/new(.:format)                         homes#new
+                            edit_home GET      /homes/:id/edit(.:format)                    homes#edit
+                                 home GET      /homes/:id(.:format)                         homes#show
+                                      PATCH    /homes/:id(.:format)                         homes#update
+                                      PUT      /homes/:id(.:format)                         homes#update
+                                      DELETE   /homes/:id(.:format)                         homes#destroy
+                                 root GET      /                                            homes#new
+                     new_user_session GET      /users/sign_in(.:format)                     devise/sessions#new
+                         user_session POST     /users/sign_in(.:format)                     devise/sessions#create
+                 destroy_user_session DELETE   /users/sign_out(.:format)                    devise/sessions#destroy
+                    new_user_password GET      /users/password/new(.:format)                devise/passwords#new
+                   edit_user_password GET      /users/password/edit(.:format)               devise/passwords#edit
+                        user_password PATCH    /users/password(.:format)                    devise/passwords#update
+                                      PUT      /users/password(.:format)                    devise/passwords#update
+                                      POST     /users/password(.:format)                    devise/passwords#create
+             cancel_user_registration GET      /users/cancel(.:format)                      devise/registrations#cancel
+                new_user_registration GET      /users/sign_up(.:format)                     devise/registrations#new
+               edit_user_registration GET      /users/edit(.:format)                        devise/registrations#edit
+                    user_registration PATCH    /users(.:format)                             devise/registrations#update
+                                      PUT      /users(.:format)                             devise/registrations#update
+                                      DELETE   /users(.:format)                             devise/registrations#destroy
+                                      POST     /users(.:format)                             devise/registrations#create
+user_google_oauth2_omniauth_authorize GET|POST /users/auth/google_oauth2(.:format)          users/omniauth_callbacks#passthru
+ user_google_oauth2_omniauth_callback GET|POST /users/auth/google_oauth2/callback(.:format) users/omniauth_callbacks#google_oauth2
+                        rails_db_info          /rails/info/db                               RailsDbInfo::Engine
+
+Routes for RailsDbInfo::Engine:
+         root GET  /                                   rails_db_info/tables#index
+table_entries GET  /tables/:table_id/entries(.:format) rails_db_info/tables#entries
+       tables GET  /tables(.:format)                   rails_db_info/tables#index
+        table GET  /tables/:id(.:format)               rails_db_info/tables#show
+]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ rials[K[K[K[Kails c
+User.last
+/home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/run.rb:140:in `connect_to_application': Error connecting to Spring server (RuntimeError)
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/run.rb:67:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/run.rb:42:in `warm_run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/run.rb:35:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/rails.rb:24:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client.rb:30:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/bin/spring:49:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `<top (required)>'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/spring:15:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ User.last
+User.last: command not found
+]0;bhanu@bhanu-desktop: ~/Desktop/varun dev/Rails Practice/fullcalenderbhanu@bhanu-desktop:~/Desktop/varun dev/Rails Practice/fullcalender$ User.last[2Prails c
+Running via Spring preloader in process 10934
+Loading development environment (Rails 5.0.2)
+2.3.0 :001 > User.last
+  [1m[36mUser Load (30.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+ => #<User id: 2, email: "varundev77@gmail.com", created_at: "2017-03-28 08:55:50", updated_at: "2017-03-28 08:55:58", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBNU1waHm1NzrAAtMI5CTvWtwA5ohJONaX91m_0ifa...", refresh_token: "1/jd4-2rWkKTvLjAGwsDjmDUGITYBCw5ttKkW8-o9aSHs"> 
+2.3.0 :002 > User.last.delete
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (107.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+ => #<User id: 2, email: "varundev77@gmail.com", created_at: "2017-03-28 08:55:50", updated_at: "2017-03-28 08:55:58", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBNU1waHm1NzrAAtMI5CTvWtwA5ohJONaX91m_0ifa...", refresh_token: "1/jd4-2rWkKTvLjAGwsDjmDUGITYBCw5ttKkW8-o9aSHs"> 
+2.3.0 :003 > User.last.delete
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (27.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+ => #<User id: 3, email: "varundev77@gmail.com", created_at: "2017-03-28 11:39:46", updated_at: "2017-03-28 11:39:50", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBKjnkYjTW04gfsv273hl5B2zV_j-xLohyX87wte6F...", refresh_token: nil> 
+2.3.0 :004 > User.last.delete
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+NoMethodError: undefined method `delete' for nil:NilClass
+	from (irb):4
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :005 > User.last.delete
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (35.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+ => #<User id: 4, email: "varundev77@gmail.com", created_at: "2017-03-28 11:49:21", updated_at: "2017-03-28 11:49:21", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBBolR8nmRyRdlt_jE-ulzHXCuG4HXv-SWAmbcEbNG...", refresh_token: nil> 
+2.3.0 :006 > User.last.delete
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (27.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+ => #<User id: 5, email: "varundev77@gmail.com", created_at: "2017-03-28 11:51:58", updated_at: "2017-03-28 11:51:58", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBJxuxJhdQ7KSj2X27XieIon21iPRH5RUAV2VtuoUR...", refresh_token: nil> 
+2.3.0 :007 > User.last.delete
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+NoMethodError: undefined method `delete' for nil:NilClass
+	from (irb):7
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :008 > User.last.delete
+  [1m[36mUser Load (20.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (7.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+ => #<User id: 6, email: "varundev77@gmail.com", created_at: "2017-03-28 12:09:07", updated_at: "2017-03-28 12:09:12", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBATke4MtnPJ7v5RFF2y_SzgYMH_gOq66c8eF8uOrD...", refresh_token: nil> 
+2.3.0 :009 > User.last.delete
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+NoMethodError: undefined method `delete' for nil:NilClass
+	from (irb):9
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :010 > User.last.delete
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (10.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+ => #<User id: 7, email: "varundev77@gmail.com", created_at: "2017-03-28 12:15:08", updated_at: "2017-03-28 12:15:16", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBK9IzSbbdSJhdb2Bf_vbjb8BjQc2W2WnmW1yNMIjN...", refresh_token: nil> 
+2.3.0 :011 > 
+2.3.0 :012 >   
+2.3.0 :013 >   
+2.3.0 :014 >   User.last.delete
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+NoMethodError: undefined method `delete' for nil:NilClass
+	from (irb):14
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :015 > User.last.delete
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+NoMethodError: undefined method `delete' for nil:NilClass
+	from (irb):15
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :016 > 
+2.3.0 :017 >   
+2.3.0 :018 >   
+2.3.0 :019 >   
+2.3.0 :020 >   
+2.3.0 :021 >   
+2.3.0 :022 >   
+2.3.0 :023 >   
+2.3.0 :024 >   
+2.3.0 :025 >   
+2.3.0 :026 >   
+2.3.0 :027 >   User.last.delete
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (10.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+ => #<User id: 8, email: "varundev77@gmail.com", created_at: "2017-03-28 12:17:21", updated_at: "2017-03-28 12:17:21", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBOiuBL1uUFRB6-7j_6iGR5m4LvjcZtxLvwBryJbEA...", refresh_token: nil> 
+2.3.0 :028 > 
+2.3.0 :029 >   
+2.3.0 :030 >   
+2.3.0 :031 >   
+2.3.0 :032 >   
+2.3.0 :033 >   
+2.3.0 :034 >   
+2.3.0 :035 >   
+2.3.0 :036 >   
+2.3.0 :037 >   
+2.3.0 :038 >   
+2.3.0 :039 >   User.last.delete[K[K[K[K[K[K[K
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+ => #<User id: 9, email: "varundev77@gmail.com", created_at: "2017-03-28 12:20:05", updated_at: "2017-03-28 12:20:05", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBOGnu0w9VfjD-beHTWYxfi1lku9RFgiPJzV8drxvG...", refresh_token: nil> 
+2.3.0 :040 > User.last.delete
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (15.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+ => #<User id: 9, email: "varundev77@gmail.com", created_at: "2017-03-28 12:20:05", updated_at: "2017-03-28 12:20:05", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlscBOGnu0w9VfjD-beHTWYxfi1lku9RFgiPJzV8drxvG...", refresh_token: nil> 
+2.3.0 :041 > 
+2.3.0 :042 >   
+2.3.0 :043 >   
+2.3.0 :044 >   User.last.delete[K.delete
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (9.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+ => #<User id: 10, email: "varundev77@gmail.com", created_at: "2017-03-28 12:31:05", updated_at: "2017-03-28 12:31:10", provider: "google_oauth2", uid: "114980922496121045682", first_name: "Varun", last_name: "Dev", username: "Varun Dev", token: "ya29.GlwcBNlEnNP_RyOcTVYtRnTH8OCvX1hiHWQBPYOKp4hIr...", refresh_token: nil> 
+2.3.0 :045 > cal = Google::Calendar.new(:client_id     => '460815436984-2iarb00t4oa5ctmkvqilol2lq4n52as7.apps.googleusercontent.com',:client_secret => 'B5PQc6OzPIzYudHVV D6SIZ6l',:calendar      => '3l2mfolmktn38s7304dtfa72hk@group.calendar.google.com',:redirect_url  => "urn:ietf:wg:oauth:2.0:oob")
+ => #<Google::Calendar:0x00000006343018 @connection=#<Google::Connection:0x00000006342fc8 @client=#<Signet::OAuth2::Client:0x00000006342ed8 @authorization_uri=#<Addressable::URI:0x31a15c8 URI:https://accounts.google.com/o/oauth2/auth>, @token_credential_uri=#<Addressable::URI:0x31a12f8 URI:https://accounts.google.com/o/oauth2/token>, @client_id="460815436984-2iarb00t4oa5ctmkvqilol2lq4n52as7.apps.googleusercontent.com", @client_secret="B5PQc6OzPIzYudHVVD6SIZ6l", @code=nil, @expires_at=nil, @expires_in=nil, @issued_at=nil, @issuer=nil, @password=nil, @principal=nil, @redirect_uri=#<Addressable::URI:0x31a1078 URI:urn:ietf:wg:oauth:2.0:oob>, @scope=["https://www.googleapis.com/auth/calendar"], @state=nil, @username=nil, @expiry=60, @extension_parameters={}, @additional_parameters={}, @refresh_token=nil>>, @id="3l2mfolmktn38s7304dtfa72hk@group.calendar.google.com"> 
+2.3.0 :046 >     cal.login_with_refresh_token('1/jd4-2rWkKTvLjAGwsDjmDUGITYBCw5ttKkW8-o9aSHs')
+ => {"access_token"=>"ya29.GlwcBCUa7iWBwA66NoylS-yXTJF0YZQ-7AuH9Mtq5n7J5e52oMqVSb-zWsBS9JaM8cSTPy4siO-sg2PoBDKKiVUfA-5DK3H71gkU3t-zHesRnnAXhfHWoCe2zkbHOQ", "expires_in"=>3600, "id_token"=>"eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiZjVlYTM1MWJiMzJjNmZlNjE5ZWM5YTBmOGU4MDMyOWJjZGFkNTEifQ.eyJhenAiOiI0NjA4MTU0MzY5ODQtMmlhcmIwMHQ0b2E1Y3Rta3ZxaWxvbDJscTRuNTJhczcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0NjA4MTU0MzY5ODQtMmlhcmIwMHQ0b2E1Y3Rta3ZxaWxvbDJscTRuNTJhczcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTQ5ODA5MjI0OTYxMjEwNDU2ODIiLCJlbWFpbCI6InZhcnVuZGV2NzdAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJaeGtrV0Jpek1GRDVjYUNmeTgxRWVRIiwiaXNzIjoiYWNjb3VudHMuZ29vZ2xlLmNvbSIsImlhdCI6MTQ5MDcwNDY1MywiZXhwIjoxNDkwNzA4MjUzfQ.ALVUg9dZL2sMUwH5PJSSvVO3g5FB35sN4zfbysynRgODu1jlMAPu4FvHCOD9BF1sckU7fTfw00d5WwJ42Y_bYzz6t3_iTo3CYKFjjiDyU-jEDNu5Y9blkYL78MusjoCiynE7HLQL-rvXvs93H-BTvqziexWV4S-0rmkjwOU7rNy4XU4GeTNT3nCwquHD--_7uM_Dq7gx8TNH3ZCKA8Icl22tnxARjLma3wFJZBYlgWqa0h7igGMa46s1B6FunGt-XEOkTTYJOq4KpyNx1WFfgboOypgLYfk4AsYU-QRfOMRWzJ9z_c1j11hK9uULFefUcw9DcWD9392rH4-Ff17TNg", "token_type"=>"Bearer"} 
+2.3.0 :047 > event = cal.create_event do |e|
+2.3.0 :048 >     e.title = ""h"e"l"l"o"0"
+2.3.0 :049?>   e.start_time = Time.now
+2.3.0 :050?>   e.end_time = Time.now + (60 * 60)
+2.3.0 :051?>   end
+ => #<Google::Event:0x000000063f6cf8 @id="lmifgfr1sb474givn0aorc3ouk", @status=nil, @raw={"kind"=>"calendar#event", "etag"=>"\"2981409375084000\"", "id"=>"lmifgfr1sb474givn0aorc3ouk", "status"=>"confirmed", "htmlLink"=>"https://www.google.com/calendar/event?eid=bG1pZmdmcjFzYjQ3NGdpdm4wYW9yYzNvdWsgM2wybWZvbG1rdG4zOHM3MzA0ZHRmYTcyaGtAZw", "created"=>"2017-03-28T12:38:07.000Z", "updated"=>"2017-03-28T12:38:07.542Z", "summary"=>"hello0", "creator"=>{"email"=>"varundev77@gmail.com", "displayName"=>"Varun Dev"}, "organizer"=>{"email"=>"3l2mfolmktn38s7304dtfa72hk@group.calendar.google.com", "displayName"=>"Demo Calendar", "self"=>true}, "start"=>{"dateTime"=>"2017-03-28T18:08:05+05:30"}, "end"=>{"dateTime"=>"2017-03-28T19:08:05+05:30"}, "transparency"=>"transparent", "iCalUID"=>"lmifgfr1sb474givn0aorc3ouk@google.com", "sequence"=>0, "reminders"=>{"useDefault"=>true}}, @html_link="https://www.google.com/calendar/event?eid=bG1pZmdmcjFzYjQ3NGdpdm4wYW9yYzNvdWsgM2wybWZvbG1rdG4zOHM3MzA0ZHRmYTcyaGtAZw", @title="hello0", @location=nil, @calendar=#<Google::Calendar:0x00000006343018 @connection=#<Google::Connection:0x00000006342fc8 @client=#<Signet::OAuth2::Client:0x00000006342ed8 @authorization_uri=#<Addressable::URI:0x31a15c8 URI:https://accounts.google.com/o/oauth2/auth>, @token_credential_uri=#<Addressable::URI:0x31a12f8 URI:https://accounts.google.com/o/oauth2/token>, @client_id="460815436984-2iarb00t4oa5ctmkvqilol2lq4n52as7.apps.googleusercontent.com", @client_secret="B5PQc6OzPIzYudHVVD6SIZ6l", @code=nil, @expires_at=nil, @expires_in=3600, @issued_at=2017-03-28 18:07:34 +0530, @issuer=nil, @password=nil, @principal=nil, @redirect_uri=#<Addressable::URI:0x31a1078 URI:urn:ietf:wg:oauth:2.0:oob>, @scope=["https://www.googleapis.com/auth/calendar"], @state=nil, @username=nil, @expiry=60, @extension_parameters={}, @additional_parameters={}, @refresh_token="1/jd4-2rWkKTvLjAGwsDjmDUGITYBCw5ttKkW8-o9aSHs", @grant_type="refresh_token", @access_token="ya29.GlwcBCUa7iWBwA66NoylS-yXTJF0YZQ-7AuH9Mtq5n7J5e52oMqVSb-zWsBS9JaM8cSTPy4siO-sg2PoBDKKiVUfA-5DK3H71gkU3t-zHesRnnAXhfHWoCe2zkbHOQ", @id_token="eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiZjVlYTM1MWJiMzJjNmZlNjE5ZWM5YTBmOGU4MDMyOWJjZGFkNTEifQ.eyJhenAiOiI0NjA4MTU0MzY5ODQtMmlhcmIwMHQ0b2E1Y3Rta3ZxaWxvbDJscTRuNTJhczcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0NjA4MTU0MzY5ODQtMmlhcmIwMHQ0b2E1Y3Rta3ZxaWxvbDJscTRuNTJhczcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTQ5ODA5MjI0OTYxMjEwNDU2ODIiLCJlbWFpbCI6InZhcnVuZGV2NzdAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJaeGtrV0Jpek1GRDVjYUNmeTgxRWVRIiwiaXNzIjoiYWNjb3VudHMuZ29vZ2xlLmNvbSIsImlhdCI6MTQ5MDcwNDY1MywiZXhwIjoxNDkwNzA4MjUzfQ.ALVUg9dZL2sMUwH5PJSSvVO3g5FB35sN4zfbysynRgODu1jlMAPu4FvHCOD9BF1sckU7fTfw00d5WwJ42Y_bYzz6t3_iTo3CYKFjjiDyU-jEDNu5Y9blkYL78MusjoCiynE7HLQL-rvXvs93H-BTvqziexWV4S-0rmkjwOU7rNy4XU4GeTNT3nCwquHD--_7uM_Dq7gx8TNH3ZCKA8Icl22tnxARjLma3wFJZBYlgWqa0h7igGMa46s1B6FunGt-XEOkTTYJOq4KpyNx1WFfgboOypgLYfk4AsYU-QRfOMRWzJ9z_c1j11hK9uULFefUcw9DcWD9392rH4-Ff17TNg">>, @id="3l2mfolmktn38s7304dtfa72hk@group.calendar.google.com">, @quickadd=nil, @attendees=nil, @description=nil, @reminders={}, @recurrence=nil, @start_time=2017-03-28 12:38:05 UTC, @end_time=2017-03-28 13:38:05 UTC, @color_id=nil, @extended_properties=nil, @guests_can_invite_others=nil, @guests_can_see_other_guests=nil, @send_notifications=nil, @visibility="default", @transparency="transparent", @new_event_with_id_specified=false> 
+2.3.0 :052 > Time.now
+ => 2017-03-28 18:08:28 +0530 
+2.3.0 :053 > Time.now - 2.day
+ => 2017-03-26 18:08:34 +0530 
+2.3.0 :054 > Time.now - 2.day[K[5Pend.end_time = Time.now + (60 * 60)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pstart_time = Time.now[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Ptitle = "hello0"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvent = cal.create_event do |e|
+2.3.0 :055 >     event = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15PTime.now - 2.day[K[5Pend.end_time = Time.now + (60 * 60)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pstart_time = Time.now[5Ptitle = "hello0"[1P"1"2"3"
+2.3.0 :056?>   e.title = "hello123"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvent = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15PTime.now - 2.day[K[5Pend.end_time = Time.now + (60 * 60)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pstart_time = Time.now - 2.days[K
+2.3.0 :057?>   e.start_time = Time.now - 2.day[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Ptitle = "hello123"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvent = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15PTime.now - 2.day[K[5Pend.end_time = Time.now + (60 * 60)[K[K[K[K[K[K[K[K[K[K[K- 2.day
+2.3.0 :058?>   end
+ => #<Google::Event:0x00000006472880 @id="oir22mbh0do15q05t83dme7mkk", @status=nil, @raw={"kind"=>"calendar#event", "etag"=>"\"2981409496582000\"", "id"=>"oir22mbh0do15q05t83dme7mkk", "status"=>"confirmed", "htmlLink"=>"https://www.google.com/calendar/event?eid=b2lyMjJtYmgwZG8xNXEwNXQ4M2RtZTdta2sgM2wybWZvbG1rdG4zOHM3MzA0ZHRmYTcyaGtAZw", "created"=>"2017-03-28T12:39:08.000Z", "updated"=>"2017-03-28T12:39:08.291Z", "summary"=>"hello123", "creator"=>{"email"=>"varundev77@gmail.com", "displayName"=>"Varun Dev"}, "organizer"=>{"email"=>"3l2mfolmktn38s7304dtfa72hk@group.calendar.google.com", "displayName"=>"Demo Calendar", "self"=>true}, "start"=>{"dateTime"=>"2017-03-26T18:09:07+05:30"}, "end"=>{"dateTime"=>"2017-03-26T18:09:07+05:30"}, "transparency"=>"transparent", "iCalUID"=>"oir22mbh0do15q05t83dme7mkk@google.com", "sequence"=>0, "reminders"=>{"useDefault"=>true}}, @html_link="https://www.google.com/calendar/event?eid=b2lyMjJtYmgwZG8xNXEwNXQ4M2RtZTdta2sgM2wybWZvbG1rdG4zOHM3MzA0ZHRmYTcyaGtAZw", @title="hello123", @location=nil, @calendar=#<Google::Calendar:0x00000006343018 @connection=#<Google::Connection:0x00000006342fc8 @client=#<Signet::OAuth2::Client:0x00000006342ed8 @authorization_uri=#<Addressable::URI:0x31a15c8 URI:https://accounts.google.com/o/oauth2/auth>, @token_credential_uri=#<Addressable::URI:0x31a12f8 URI:https://accounts.google.com/o/oauth2/token>, @client_id="460815436984-2iarb00t4oa5ctmkvqilol2lq4n52as7.apps.googleusercontent.com", @client_secret="B5PQc6OzPIzYudHVVD6SIZ6l", @code=nil, @expires_at=nil, @expires_in=3600, @issued_at=2017-03-28 18:07:34 +0530, @issuer=nil, @password=nil, @principal=nil, @redirect_uri=#<Addressable::URI:0x31a1078 URI:urn:ietf:wg:oauth:2.0:oob>, @scope=["https://www.googleapis.com/auth/calendar"], @state=nil, @username=nil, @expiry=60, @extension_parameters={}, @additional_parameters={}, @refresh_token="1/jd4-2rWkKTvLjAGwsDjmDUGITYBCw5ttKkW8-o9aSHs", @grant_type="refresh_token", @access_token="ya29.GlwcBCUa7iWBwA66NoylS-yXTJF0YZQ-7AuH9Mtq5n7J5e52oMqVSb-zWsBS9JaM8cSTPy4siO-sg2PoBDKKiVUfA-5DK3H71gkU3t-zHesRnnAXhfHWoCe2zkbHOQ", @id_token="eyJhbGciOiJSUzI1NiIsImtpZCI6IjZiZjVlYTM1MWJiMzJjNmZlNjE5ZWM5YTBmOGU4MDMyOWJjZGFkNTEifQ.eyJhenAiOiI0NjA4MTU0MzY5ODQtMmlhcmIwMHQ0b2E1Y3Rta3ZxaWxvbDJscTRuNTJhczcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0NjA4MTU0MzY5ODQtMmlhcmIwMHQ0b2E1Y3Rta3ZxaWxvbDJscTRuNTJhczcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTQ5ODA5MjI0OTYxMjEwNDU2ODIiLCJlbWFpbCI6InZhcnVuZGV2NzdAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJaeGtrV0Jpek1GRDVjYUNmeTgxRWVRIiwiaXNzIjoiYWNjb3VudHMuZ29vZ2xlLmNvbSIsImlhdCI6MTQ5MDcwNDY1MywiZXhwIjoxNDkwNzA4MjUzfQ.ALVUg9dZL2sMUwH5PJSSvVO3g5FB35sN4zfbysynRgODu1jlMAPu4FvHCOD9BF1sckU7fTfw00d5WwJ42Y_bYzz6t3_iTo3CYKFjjiDyU-jEDNu5Y9blkYL78MusjoCiynE7HLQL-rvXvs93H-BTvqziexWV4S-0rmkjwOU7rNy4XU4GeTNT3nCwquHD--_7uM_Dq7gx8TNH3ZCKA8Icl22tnxARjLma3wFJZBYlgWqa0h7igGMa46s1B6FunGt-XEOkTTYJOq4KpyNx1WFfgboOypgLYfk4AsYU-QRfOMRWzJ9z_c1j11hK9uULFefUcw9DcWD9392rH4-Ff17TNg">>, @id="3l2mfolmktn38s7304dtfa72hk@group.calendar.google.com">, @quickadd=nil, @attendees=nil, @description=nil, @reminders={}, @recurrence=nil, @start_time=2017-03-26 12:39:07 UTC, @end_time=2017-03-26 12:39:07 UTC, @color_id=nil, @extended_properties=nil, @guests_can_invite_others=nil, @guests_can_see_other_guests=nil, @send_notifications=nil, @visibility="default", @transparency="transparent", @new_event_with_id_specified=false> 
+2.3.0 :059 > Time.now
+ => 2017-03-28 18:09:32 +0530 
+2.3.0 :060 > 
+2.3.0 :061 >   Home.last
+  [1m[36mHome Load (1.0ms)[0m  [1m[34mSELECT  "homes".* FROM "homes" ORDER BY "homes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+ => #<Home id: 7, name: "abcd", description: "etest", starting_date: "2017-03-06", ending_date: "2017-03-06", created_at: "2017-03-28 12:32:59", updated_at: "2017-03-28 12:32:59", category: "Category 1"> 
+2.3.0 :062 > Home.last[K[K[K[Kfirst
+  [1m[36mHome Load (0.7ms)[0m  [1m[34mSELECT  "homes".* FROM "homes" ORDER BY "homes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+ => #<Home id: 1, name: "Varun Dev", description: "its kk", starting_date: "2017-03-22", ending_date: "2017-03-22", created_at: "2017-03-22 12:34:52", updated_at: "2017-03-22 12:34:52", category: nil> 
+2.3.0 :063 > Home.firstaHome.first=Home.first
+  [1m[36mHome Load (0.9ms)[0m  [1m[34mSELECT  "homes".* FROM "homes" ORDER BY "homes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+ => #<Home id: 1, name: "Varun Dev", description: "its kk", starting_date: "2017-03-22", ending_date: "2017-03-22", created_at: "2017-03-22 12:34:52", updated_at: "2017-03-22 12:34:52", category: nil> 
+2.3.0 :064 > title[K[K[K[K[Kname = a.name
+ => "Varun Dev" 
+2.3.0 :065 > start = a.starting_time
+NoMethodError: undefined method `starting_time' for #<Home:0x00000006571010>
+Did you mean?  starting_date
+               starting_date?
+               starting_date=
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activemodel-5.0.2/lib/active_model/attribute_methods.rb:433:in `method_missing'
+	from (irb):65
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :066 > 
+2.3.0 :067 >   start = a.starting_time[K[K[K[Kdate
+ => Wed, 22 Mar 2017 
+2.3.0 :068 > end=a.ending_date
+SyntaxError: (irb):68: syntax error, unexpected keyword_end
+end=a.ending_date
+   ^
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :069 > end=a.ending_date[Ka
+ => #<Home id: 1, name: "Varun Dev", description: "its kk", starting_date: "2017-03-22", ending_date: "2017-03-22", created_at: "2017-03-22 12:34:52", updated_at: "2017-03-22 12:34:52", category: nil> 
+2.3.0 :070 > aend=a.ending_date[Ci=a.ending_daten=a.ending_dateg=a.ending_date
+ => Wed, 22 Mar 2017 
+2.3.0 :071 > ending=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[Ca[Kend=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[Cstart = a.starting_datetime[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pname = a.name[1Pa=Home.first[2PHome.first[1Plast[1PTime.now[5Pend.end_time = Time.now - 2.day[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@start[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Ptitle = "hello123"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvent = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[15PTime.now - 2.day[C[C[C[C[C[C[C[C[C[C[C[C[Cevent = cal.create_event do |e|
+2.3.0 :072 >     event = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pnding=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca[Kend=a.ending_datestart = a.starting_datetime[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pname = a.name[1Pa=Home.first[2PHome.first[1Plast[1PTime.now[5Pend.end_time = Time.now - 2.day[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@start[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Ptitle = "hello123"vent = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11P.title = "hello123"[K[K[K[K[K[K[K[K[K[Kname
+2.3.0 :073?>   e.title = namevent = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pnding=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca[Kend=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstart = a.starting_datetime[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pname = a.name[1Pa=Home.firstname = a.namestart = a.starting_time[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pname = a.name[1Pa=Home.first[2PHome.first[1Plast[1PTime.now[5Pend.end_time = Time.now - 2.day[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@start[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kstart
+2.3.0 :074?>   e.start_time = start[6Ptitle = namevent = cal.create_event do |e|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pnding=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca[Kend=a.ending_date[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstart = a.starting_datetime[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pname = a.name[1Pa=Home.first[2PHome.first[1Plast[1PTime.now[5Pend.end_time = Time.now - 2.day[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kending
+2.3.0 :075?>   end
+ArgumentError: Start Time must be either Time or String
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/google_calendar-0.6.2/lib/google/event.rb:549:in `parse_time'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/google_calendar-0.6.2/lib/google/event.rb:89:in `start_time='
+	from (irb):73:in `block in irb_binding'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/google_calendar-0.6.2/lib/google/calendar.rb:381:in `setup_event'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/google_calendar-0.6.2/lib/google/calendar.rb:263:in `create_event'
+	from (irb):71
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'2.3.0 :076 > Time.now
+ => 2017-03-28 18:11:46 +0530 
+2.3.0 :077 > start
+ => Wed, 22 Mar 2017 
+2.3.0 :078 > a
+ => #<Home id: 1, name: "Varun Dev", description: "its kk", starting_date: "2017-03-22", ending_date: "2017-03-22", created_at: "2017-03-22 12:34:52", updated_at: "2017-03-22 12:34:52", category: nil> 
+2.3.0 :079 > Home
+ => Home(id: integer, name: string, description: text, starting_date: date, ending_date: date, created_at: datetime, updated_at: datetime, category: string) 
+2.3.0 :080 > Time.now - 2.day
+ => 2017-03-26 18:12:29 +0530 
+2.3.0 :081 > start
+ => Wed, 22 Mar 2017 
+2.3.0 :082 > start.strftime()")")%")f")[1P")d")
+ => "22" 
+2.3.0 :083 > start.strftime("%d")[1P")D")
+ => "03/22/17" 
+2.3.0 :084 > start.strftime("%D")[C[1P")H")
+ => "00" 
+2.3.0 :085 > start.strftime("%H")[1P")Y")
+ => "2017" 
+2.3.0 :086 > start.strftime("%Y")-")%")H")
+ => "2017-00" 
+2.3.0 :087 > start.strftime("%Y-%H")[1P")M")
+ => "2017-00" 
+2.3.0 :088 > start.strftime("%Y-%M")[1P")m")
+ => "2017-03" 
+2.3.0 :089 > start.strftime("%Y-%m")-")%")d")
+ => "2017-03-22" 
+2.3.0 :090 > start.strftime("%Y-%m-%d") ")%")H")
+ => "2017-03-22 00" 
+2.3.0 :091 > start.strftime("%Y-%m-%d %H") ")%")M")
+ => "2017-03-22 00 00" 
+2.3.0 :092 > start.strftime("%Y-%m-%d %H %M")[1P%M"):%M")[C[C:")%")s")
+ => "2017-03-22 00:00:1490140800" 
+2.3.0 :093 > start.strftime("%Y-%m-%d %H:%M:%s")[1P")S")
+ => "2017-03-22 00:00:00" 
+2.3.0 :094 > start.strftime("%Y-%m-%d %H:%M:%S")exit
+SyntaxError: (irb):94: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console.rb:65:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/console_helper.rb:9:in `start'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:78:in `console'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.2/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `block in require'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:293:in `require'
+	from /home/bhanu/Desktop/varun dev/Rails Practice/fullcalender/bin/rails:9:in `<top (required)>'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `block in load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:259:in `load_dependency'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/activesupport-5.0.2/lib/active_support/dependencies.rb:287:in `load'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/commands/rails.rb:6:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:191:in `block in serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `fork'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:161:in `serve'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:131:in `block in run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `loop'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application.rb:125:in `run'
+	from /home/bhanu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/application/boot.rb:19:in `<top (required)>'
+	from /home/bhanu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /h
