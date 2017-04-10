@@ -28,11 +28,6 @@ class HomesController < ApplicationController
   def update
     @select = Home.find(params[:id])
     @select.update(home_params)
-    # if @select.save!
-    #   redirect_to new_home_path
-    # else
-    #   redirect_to homes_path
-    # end
   end
 
   def destroy
@@ -45,10 +40,17 @@ class HomesController < ApplicationController
   end
 
   def events
-  	# binding.pry
   	@data = Home.where(name: params[:title].strip).last
   	render json: {data: @data}
-  	
+  end
+
+  def disconnect_account
+    uri = URI('https://accounts.google.com/o/oauth2/revoke')
+    params = { :token => current_user.refresh_token }
+    uri.query = URI.encode_www_form(params)
+    response = Net::HTTP.get(uri)
+    user_delete = current_user.destroy
+    redirect_to new_home_path
   end
 
   def home_params

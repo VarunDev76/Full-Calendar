@@ -6,7 +6,11 @@
 <div id="page-wrapper" class="gray-bg">
 
 <div class="wrapper wrapper-content">
-<%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
+<% if current_user.present? %>
+    <%= link_to "Discconnect to Google Id", homes_disconnect_account_path %>
+<% elsif current_user.nil? %>
+    <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
+<%end%>
     <div class="row animated fadeInDown">
         <div class="col-lg-3">
             <div class="ibox float-e-margins">
