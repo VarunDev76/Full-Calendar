@@ -1,12 +1,40 @@
 <h1> Homes#index </h1>
 <p> Find me in app/views/homes/index.html.erb </p>
 
+<style type="text/css">
+	.white{color:#fff;}
+	@media (max-width:760px){
+		.white{color:#000;}
+	}
+</style>
 
-<% @data.each do|f| %>
-    <p>
-        <div class="hint"> <strong>	id	</strong>	<%= f.name %>	</div>	
-        <div class="hint"> <strong>	strarting date	</strong> 	<%= f.starting_date %>	</div>	
-        <div class="hint"> <strong>	ending date	</strong> 	<%= f.ending_date %>	</div>	
-        <div class="hint"> <strong>	description	</strong>	<%= f.description %>	</div>	
-    </p>
-<% end %>
+<div class="container-fluid">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="table-responsive">
+				<table class="table table-bordered table-inverse text-center">
+					<thead>
+						<tr>
+							<th class="text-center"> <h3> <strong> Sr.No </strong> </h3> </th>
+							<th class="text-center"> <h3> <strong> Name </strong> </h3> </th>
+							<th class="text-center"> <h3> <strong> Starting Date </strong> </h3> </th>
+							<th class="text-center"> <h3> <strong> Ending Date </strong> </h3> </th>
+							<th class="text-center"> <h3> <strong> Description </strong> </h3> </th>
+						</tr>
+					</thead>
+					<tbody class="white">
+						<% @data.each do|f| %>
+							<tr>
+								<th class="text-center"> <%= f.id %> </th>
+								<td> <%= f.name %> </td>
+								<td> <%= f.starting_date %> </td>
+								<td> <%= f.ending_date %> </td>
+								<td> <%= f.description %> </td>
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

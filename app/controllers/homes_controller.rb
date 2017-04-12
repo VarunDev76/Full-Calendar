@@ -46,7 +46,7 @@ class HomesController < ApplicationController
 
   def disconnect_account
     uri = URI('https://accounts.google.com/o/oauth2/revoke')
-    params = { :token => current_user.refresh_token }
+    params = { :token => current_user.refresh_token || current_user.token }
     uri.query = URI.encode_www_form(params)
     response = Net::HTTP.get(uri)
     user_delete = current_user.destroy

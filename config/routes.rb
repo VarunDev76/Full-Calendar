@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'google_data/index'
+
+  get 'google_data/show'
+
+  get 'google_data/new'
+
+  get 'google_data/destroy'
+
+  get 'google_data/edit'
+
   get 'homes/events'
   post '/events' => "homes#events"
 
