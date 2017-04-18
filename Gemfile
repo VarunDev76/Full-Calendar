@@ -67,3 +67,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry'
 gem 'rails_db_info'
+gem 'inherited_resources', '~> 1.7'
+gem 'activeadmin', '>= 1.0.0.pre5'
+# gem "meta_search"

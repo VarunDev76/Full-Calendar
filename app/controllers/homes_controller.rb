@@ -6,11 +6,13 @@ class HomesController < ApplicationController
   end
 
   def new
+    # @user = User.find(current_user.id)
   	@select = Home.new
   end
 
   def create
-   @select = Home.new(home_params)
+    @user = User.find(current_user.id)
+   @select = @user.homes.new(home_params)
     if @select.save!
       redirect_to new_home_path
     else
@@ -54,7 +56,7 @@ class HomesController < ApplicationController
   end
 
   def home_params
-  	return params.require(:home).permit(:name, :event_id , :starting_date, :ending_date, :description, :category)
+  	return params.require(:home).permit(:user_id, :username, :name, :event_id , :starting_date, :ending_date, :description, :category)
   end
 
 end

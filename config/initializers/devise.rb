@@ -121,7 +121,7 @@ Devise.setup do |config|
   # the user cannot access the website without confirming their account.
   # config.allow_unconfirmed_access_for = 2.days
 
-  config.omniauth :google_oauth2, "460815436984-2iarb00t4oa5ctmkvqilol2lq4n52as7.apps.googleusercontent.com" ,"5prw_SVuKeFbxzrC-36oEoFD" , {
+  config.omniauth :google_oauth2, "460815436984-2iarb00t4oa5ctmkvqilol2lq4n52as7.apps.googleusercontent.com" ,"CCllN9WwGsqiG3DOAtbmb_Le" , {
     scope: "https://www.googleapis.com/auth/userinfo.email,https://www.googleapis.com/auth/userinfo.profile,http://www.google.com/calendar/feeds,http://www.google.com/m8/feeds"
   }
 
